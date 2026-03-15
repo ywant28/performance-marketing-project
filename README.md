@@ -79,7 +79,7 @@ sql/
 01_database_schema.sql  
 02_sanity_checks.sql  
 03_analysis_queries.sql  
-04_advanced_analysis.sql  
+04_performance_marketing_analysis.sql  
 
 documentation/
 business_questions.md  
