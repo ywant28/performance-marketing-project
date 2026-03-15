@@ -25,10 +25,11 @@ LIMIT 5;
 
 -- Monthly revenue trend
 SELECT 
+c.month_id,
 c.month_name,
-SUM(a.revenue) revenue
+SUM(a.revenue) AS revenue
 FROM ad_performance a
 JOIN calendar c
 ON a.month_id = c.month_id
-GROUP BY c.month_name
+GROUP BY c.month_id, c.month_name
 ORDER BY c.month_id;
